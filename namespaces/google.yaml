@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: google
+  labels:
+    project: google
+    environment: dev
