@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: flipkart
+  name: amazon
   labels:
-    project: flipkart
+    project: amazon
     environment: dev
