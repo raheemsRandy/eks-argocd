@@ -7,8 +7,14 @@ spec:
   project: default
   source:
     repoURL: https://github.com/raheemsRandy/eks-argocd.git
-    targetRevision: HEAD # Targets the latest commit on the default branch
-    path: guestbook # Directory path within the repository
+    targetRevision: main # Targets the latest commit on the default branch
+    path: namespaces # Directory path within the repository
   destination:
     server: https://kubernetes.default.svc # The target Kubernetes cluster API server
-    namespace: guestbook # The target namespace within the cluster
+    namespace: argocd # The target namespace within the cluster
+syncPolicy:
+  automated: # Enable automated synchronization
+    prune: true # Delete resources that are no longer in Git
+    selfHeal: true # Revert changes made manually in the cluster to match Git
+  syncOptions:
+    - CreateNamespace=true # Automatically create the target namespace if it doesn't exist
