@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: namespaces
   namespace: argocd # Namespace where the Argo CD control plane is running
+  finalizers:
+    - resources-finalizers.argocd.argoproj.io
 spec:
   project: default
   source:
