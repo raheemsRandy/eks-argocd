@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/argoproj/argocd-example-apps.git
+    repoURL: https://github.com/raheemsRandy/eks-argocd.git
     targetRevision: HEAD # Targets the latest commit on the default branch
     path: guestbook # Directory path within the repository
   destination:
