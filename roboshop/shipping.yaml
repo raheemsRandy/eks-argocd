@@ -39,7 +39,7 @@ spec:
     spec:
       containers:
       - name: shipping
-        image: 989088456804.dkr.ecr.us-east-1.amazonaws.com/roboshop/shipping:1.0.0
+        image: 989088456804.dkr.ecr.us-east-1.amazonaws.com/roboshop/shipping:1.0
         envFrom:
         - configMapRef:
             name: shipping
