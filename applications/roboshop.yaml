@@ -13,7 +13,7 @@ spec:
     path: roboshop # Directory path within the repository
   destination:
     server: https://kubernetes.default.svc # The target Kubernetes cluster API server
-    namespace: argocd # The target namespace within the cluster
+    namespace: argocd #  The target namespace within the cluster
   syncPolicy:
     automated: # Enable automated synchronization
       prune: true # Delete resources that are no longer in Git
